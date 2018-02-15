@@ -1,0 +1,40 @@
+*{
+	body{
+		#wrapper{
+			width: 1024px;
+			margin: 0 auto;
+			nav{
+				width: 940px;
+				margin: 0 auto;
+				ul{
+					overflow: hidden;
+					width: 100%;
+					li{
+						list-style-type: none;
+						float: left;
+						margin-left: 20px;
+						a{
+							text-decoration: none;
+							color: #000;
+						}
+					}
+					li:first-child{
+						margin-left: 0;
+					}
+					li:hover{
+						a{
+							color: #888;
+						}
+					}
+				}
+			}
+			canvas{
+				width: 600px; 
+				height: 300px;
+				display: block;
+				margin: 0 auto;
+				padding-left: 300px;
+			}
+		}
+	}
+}
