@@ -2,13 +2,7 @@ document.getElementById("buttons").onclick = getNumber;
 var display = document.getElementById("display");
 var tmp = 0;
 var lastop;
-
-function calcAdd(e) {
-    var buttonValue = this.innerText;
-    var num = document.getElementsByClassName("t1").innerHTML;
-    console.log(num);
-    // display.innerText += btn;
-}
+var q = false;
 
 function getNumber(event)
 {
@@ -16,80 +10,146 @@ function getNumber(event)
     if (btn === "+") {
         tmp = display.innerText;
         lastop = "+";
-        display.innerText = "";
+        display.innerText += "+";
+        q = false;
         console.log(tmp);
     }
     if (btn === "-") {
         tmp = display.innerText;
         lastop = "-";
-        display.innerText = "";
+        display.innerText += "-";
+        q = false;
         console.log(tmp);
     }
 
     if (btn === "*") {
         tmp = display.innerText;
         lastop = "*";
-        display.innerText = "";
+        display.innerText += "*";
+        q = false;
         console.log(tmp);
     }
     if (btn === "/") {
         tmp = display.innerText;
         lastop = "/";
-        display.innerText = "";
+        display.innerText += "/";
+        q = false;
         console.log(tmp);
     }
 
     if (btn === "=") {
+        
         switch (lastop) {
             case "+":
-                res = parseFloat(tmp) + parseFloat(display.innerText);
+                var num2 =display.innerText.split("+");
+                res = parseFloat(tmp) + parseFloat(num2[1]);
                 break;
 
             case "-":
-                res = parseFloat(tmp) - parseFloat(display.innerText);
+                var num2 =display.innerText.split("-");
+                res = parseFloat(tmp) - parseFloat(num2[1]);
                 break;
 
             case "*":
-                res = parseFloat(tmp) * parseFloat(display.innerText);
+                var num2 =display.innerText.split("*");
+                res = parseFloat(tmp) * parseFloat(num2[1]);
                 break;
 
             case "/":
-                res = parseFloat(tmp) / parseFloat(display.innerText);
+                var num2 =display.innerText.split("/");
+                res = parseFloat(tmp) / parseFloat(num2[1]);
                 break;
         }
+        q = true;
         display.innerText = res;
     }
     
     if (btn === "9")
+        if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "8")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "7")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "6")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "5")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "4")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "3")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "2")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "1")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
     if (btn === "0")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
+    
     if (btn === ".")
+         if(q === false)
         display.innerText += btn;
+        else{
+            display.innerText = btn;
+            q = false;
+    }
 
 }
