@@ -6,6 +6,7 @@ var q = false;
 
 function getNumber(event)
 {
+    
     var btn = event.target.innerHTML;
     if (btn === "+") {
         tmp = display.innerText;
@@ -39,7 +40,9 @@ function getNumber(event)
 
     if (btn === "=") {
         
-        switch (lastop) {
+        q = true;
+        display.innerText = parseFloat(eval(display.innerText));
+        /*switch (lastop) {
             case "+":
                 var num2 =display.innerText.split("+");
                 res = parseFloat(tmp) + parseFloat(num2[1]);
@@ -59,9 +62,7 @@ function getNumber(event)
                 var num2 =display.innerText.split("/");
                 res = parseFloat(tmp) / parseFloat(num2[1]);
                 break;
-        }
-        q = true;
-        display.innerText = res;
+        }*/
     }
     
     if (btn === "9")
