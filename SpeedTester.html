@@ -8,7 +8,19 @@
 <body>
 <div id="wrapper">
     <nav id="menu"></nav>
+    <div id="rules">
+	    <p class="rules">This is a typing test. Your goal is to duplicate the provided text, EXACTLY,</p>
+	    <p class="rules"> in the field below. The timer starts when you start typing, and only stops</p>
+	    <p class="rules"> when you match this text exactly. Good luck!</p>
+    </div>
+    <div id="texttotypediv">
+    	<p id="texttotype"></p>
+    </div>
+    <textarea name="" id="text" cols="100" rows="15" style="resize: none;"></textarea>
+    <p id="timer"><span id="seconds">00</span>:<span id="tens">00</span></p>
+    <button id="startOver">Start over</button>
 </div>
 <script src="js/include.js"></script>
+<script src="js/speedTest.js"></script>
 </body>
 </html>

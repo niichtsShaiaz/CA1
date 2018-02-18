@@ -1,6 +1,7 @@
 * body #wrapper {
   width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   * body #wrapper nav {
     width: 940px;
     margin: 0 auto; }
@@ -60,5 +61,36 @@
       text-shadow: 0px 1px 0px #ffffff; }
     * body #wrapper #calBody button:hover {
       background-color: #dfdfdf; }
+  * body #wrapper #rules {
+    background-color: #6bad8b;
+    width: 500px;
+    margin: 0 auto; }
+    * body #wrapper #rules .rules {
+      margin-top: 0;
+      margin-bottom: 0; }
+  * body #wrapper #texttotypediv {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #ededed; }
+  * body #wrapper #text {
+    margin: 0 auto;
+    display: block; }
+  * body #wrapper #startOver {
+    margin: 0 auto;
+    display: block; }
+  * body #wrapper #timer {
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+  * body #wrapper #res table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; }
+  * body #wrapper #res td, * body #wrapper #res th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; }
+  * body #wrapper #res tr:nth-child(even) {
+    background-color: #dddddd; }
 
 /*# sourceMappingURL=main.css.map */

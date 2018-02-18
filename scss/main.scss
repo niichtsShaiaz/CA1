@@ -3,6 +3,7 @@
 		#wrapper{
 			width: 1024px;
 			margin: 0 auto;
+			overflow: hidden;
 			nav{
 				width: 940px;
 				margin: 0 auto;
@@ -74,6 +75,49 @@
 					}
 				button:hover{
 					background-color:#dfdfdf;
+				}
+			}
+			#rules{
+				background-color: #6bad8b;
+				width: 500px;
+				margin: 0 auto;
+				.rules{
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+			#texttotypediv{
+				margin: 0 auto;
+				width: 500px;
+				background-color: #ededed;
+			}
+			#text{
+				margin: 0 auto;
+				display: block;
+			}
+			#startOver{
+				margin: 0 auto;
+				display: block;
+			}
+			#timer{
+				margin: 0 auto;
+				display: block;
+				text-align: center;
+			}
+			#res{
+				table{
+					font-family: arial, sans-serif;
+					border-collapse: collapse;
+					width: 100%;
+				}
+				td, th {
+					 border: 1px solid #dddddd;
+					 text-align: left;
+					 padding: 8px;
+				 }
+
+				tr:nth-child(even) {
+					background-color: #dddddd;
 				}
 			}
 		}
