@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DomManipulation</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<div id="wrapper">
-    <nav id="menu"></nav>
-
-    <div id="add">
-        <input name="boy" id="boy" type="text"><button id="AddBoy">Add Boy</button>
-        <input name="girl" id="girl" type="text"><button id="AddGirl">Add Girl</button>
-    </div>
-    <div id="function">
-        <button id="removeBoy">Remove boy</button>
-        <button id="removeGirl">Remove girl</button>
-        <input type="radio" name="choice" id="removeFirst"><label for="removeFirst">Remove first</label>
-        <input type="radio" name="choice" id="removeLast"><label for="removeLast">Remove last</label>
-        <button id="reverseAll">Reverse all</button>
-        <button id="sortAll">Sort all</button>
-    </div>
-    <div id="table"></div>
-
-</div>
-<script src="js/include.js"></script>
-</body>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jsBogGirl.js" type="text/javascript"></script>
+        <link href="css/cssBoyGirl.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body onload="firstLoad()">
+        <div id="wrapper">
+            <nav id="menu"></nav>
+        <div class="container">
+            <h2>DOM manipulation via plain JavaScript</h2>
+            <h3>And getting used to the JavaScript Array</h3>
+            <div class='inputs'>      
+                <input id="newboy" placeholder='Add boy' />
+                <button id='addboy' onclick="addBoy()">Add Boy</button>
+                <input id="newgirl" placeholder='Add girl' />
+                <button id = 'addgirl' onclick="addGirl()">Add Girl</button>
+            </div>
+            <div class='inputs'>
+                <button id='removeboy' onclick="removeBoy()">Remove boy</button>
+                <button id='removegirl' onclick="removeGirl()">Remove girl</button>
+                <Input type='radio' name='direction' id='first'/>  Remove first
+                <Input type='radio' name='direction' id='last'/> Remove last
+                <button id='reverse' onclick="reverseAll()">Reverse all</button>
+                <button id='sort' onclick="sortAll()">Sort all</button>
+            </div>
+            <div class="lists">
+                <h4>Boys</h4>
+                <div id="boys"></div>
+            </div>
+            <div class="lists">
+                <h4 style="text-align: center">Girls</h4>
+                <div class="names" id="girls"></div>
+            </div>
+            <div class="lists">
+                <h4>All</h4>
+                <div id="all"></div>
+            </div>
+        </div>
+        </div>
+        <script src="js/include.js"></script>
+    </body>
 </html>
